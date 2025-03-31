@@ -57,3 +57,18 @@ Update personal info in HTML file
 Modify colors in CSS :root variables
 
 Add/remove projects as needed
+# 📬 Contact
+Email: ankitraji1068@gmail.com
+
+LinkedIn: linkedin.com/in/ankit1068
+
+GitHub: github.com/ankit1068
+
+Instagram: instagram.com/ankit.iox
+
+📜 License
+This project is open-source under the MIT License.
+
+⭐ Feel free to star this repository if you find it useful!
+
+
