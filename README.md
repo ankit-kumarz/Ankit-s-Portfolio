@@ -29,3 +29,31 @@ portfolio/
 │ └── ... # Other project images
 ├── my_Resume (3).pdf # Resume/CV
 └── README.md # This file
+
+## 🎨 Color Scheme
+| Color               | Hex Code   |
+|---------------------|-----------|
+| Primary Purple      | `#7c3aed` |
+| Dark Purple         | `#5b21b6` |
+| Dark Background     | `#0f172a` |
+| Card Background     | `#1e293b` |
+| Light Text          | `#f8fafc` |
+| Gray Text           | `#94a3b8` |
+
+## 🔧 Installation (For Local Development)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ankit1068/portfolio.git
+
+   Open index.html in your browser
+
+📝 Customization
+To personalize this portfolio:
+
+Replace images in /images folder
+
+Update personal info in HTML file
+
+Modify colors in CSS :root variables
+
+Add/remove projects as needed
