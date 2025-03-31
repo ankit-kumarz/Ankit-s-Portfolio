@@ -20,3 +20,12 @@
 - **Deployment**: GitHub Pages
 
 ## 📂 Project Structure
+portfolio/
+├── index.html # Main HTML file
+├── images/ # All portfolio images
+│ ├── profile.jpg
+│ ├── profile-about.jpg
+│ ├── ecommerce-comparison.jpg
+│ └── ... # Other project images
+├── my_Resume (3).pdf # Resume/CV
+└── README.md # This file
