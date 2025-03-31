@@ -1,9 +1,13 @@
 # Ankit Kumar - Full Stack Developer Portfolio
 
-![Portfolio Screenshot](./images/portfolio-screenshot.png) <!-- Add a screenshot if available -->
+![Portfolio Screenshot](![Screenshot 2025-03-31 232459](https://github.com/user-attachments/assets/ab8ca1ef-bd0d-4c59-b263-23bbf2c64e6b)
+![Screenshot 2025-03-31 232524](https://github.com/user-attachments/assets/3dfd6bf6-1972-42d4-ba5b-3a18c03e4dc6)
+![Screenshot 2025-03-31 232537](https://github.com/user-attachments/assets/e87a00c1-dd33-4f64-8555-2ae7ec0eff48)
+
+) <!-- Add a screenshot if available -->
 
 ## 🚀 Live Demo
-[View Portfolio](https://ankit1068.github.io/) <!-- Replace with your GitHub Pages or custom domain link -->
+[View Portfolio](https://github.com/ankit1068/Ankit-s-Portfolio) <!-- Replace with your GitHub Pages or custom domain link -->
 
 ## 🌟 Features
 - **Modern UI** with gradient accents and smooth animations
