@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ankit Kumar | Full Stack Developer</title>
+  <title>Ankit Kumar | Aspiring Software Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
@@ -479,7 +479,37 @@
     .project-links {
       display: flex;
       gap: 1rem;
-      flex-wrap: wrap;
+    }
+
+    .project-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .project-links a:first-child {
+      background-color: var(--primary);
+      color: white;
+      border: 1px solid var(--primary);
+    }
+
+    .project-links a:first-child:hover {
+      background-color: rgba(124, 58, 237, 0.9);
+    }
+
+    .project-links a:last-child {
+      background-color: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+
+    .project-links a:last-child:hover {
+      background-color: rgba(124, 58, 237, 0.1);
     }
 
     /* Skills Section */
@@ -648,6 +678,24 @@
     textarea.form-control {
       min-height: 150px;
       resize: vertical;
+    }
+
+    /* Form Feedback Styles */
+    #form-message {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    #form-message.success {
+      background-color: rgba(16, 185, 129, 0.1);
+      border-left: 3px solid var(--success);
+    }
+    #form-message.error {
+      background-color: rgba(239, 68, 68, 0.1);
+      border-left: 3px solid #ef4444;
     }
 
     /* Footer */
@@ -860,17 +908,16 @@
         <a href="#" class="logo">Ankit<span>.</span></a>
 
         <!-- Desktop Navigation -->
-       <!-- Desktop Navigation -->
-<div class="desktop-nav">
-  <div style="display: flex; align-items: center; gap: 2rem;">
-    <a href="#home" class="nav-link">Home</a>
-    <a href="#about" class="nav-link">About</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </div>
-  <a href="#" class="btn btn-primary" style="margin-left: 2rem;">Download CV</a>
-</div>
+        <div class="desktop-nav">
+          <div style="display: flex; align-items: center; gap: 2rem;">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          <a href="#" class="btn btn-primary" style="margin-left: 2rem;">Download CV</a>
+        </div>
 
         <!-- Mobile Navigation Button -->
         <button class="mobile-menu-btn">
@@ -897,10 +944,10 @@
         <div class="hero-text">
           <h1 class="hero-title">
             Hi, I'm Ankit Kumar
-            <span>Full Stack Developer</span>
+            <span>Aspiring Software Developer</span>
           </h1>
           <p class="hero-description">
-            I build exceptional digital experiences with modern technologies. Currently focused on developing web applications with Python, Java, and JavaScript.
+            I build exceptional digital experiences with modern technologies. Currently learning DevOps tools including Docker, Kubernetes, AWS, and CI/CD pipelines.
           </p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">
@@ -920,7 +967,7 @@
       <div class="stats">
         <div class="stat-item">
           <div class="stat-value">1+</div>
-          <div class="stat-label">Years Experience</div>
+          <div class="stat-label">Month Experience</div>
         </div>
         <div class="stat-item">
           <div class="stat-value">6+</div>
@@ -949,7 +996,7 @@
         <div>
           <div class="about-text">
             <p>
-              I'm a passionate Full Stack Developer with a Bachelor's degree in Computer Science and Engineering from JECRC University, Jaipur, where I graduated with a CGPA of 8.3.
+              I'm a Passionate Software Developer with a Bachelor's degree in Computer Science and Engineering from JECRC University, Jaipur, where I graduated with a CGPA of 8.3.
             </p>
             <p>
               My journey in software development began with a curiosity about how things work, which evolved into a passion for building solutions that make a difference. I specialize in creating robust web applications with clean, efficient code.
@@ -965,10 +1012,13 @@
               <span class="skill-tag">Java</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">Flask</span>
-              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">OpenCV & NumPy</span>
               <span class="skill-tag">MySQL</span>
               <span class="skill-tag">MongoDB</span>
               <span class="skill-tag">HTML5/CSS3</span>
+              <span class="skill-tag">REST API</span>
+              <span class="skill-tag">DevOps</span>
+            
             </div>
           </div>
         </div>
@@ -1029,10 +1079,10 @@
               <span class="tech-tag">REST API</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
@@ -1054,12 +1104,14 @@
               <span class="tech-tag">OpenCV</span>
               <span class="tech-tag">Flask</span>
               <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Germ-Detection-System" class="btn btn-outline" target="_blank">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Germ-Detection-System" class="btn btn-outline" target="_blank">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
@@ -1081,12 +1133,13 @@
               <span class="tech-tag">Servlets</span>
               <span class="tech-tag">JSP</span>
               <span class="tech-tag">Apache Tomcat</span>
+              <span class="tech-tag">HTML</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Doctor_Appoinment-" class="btn btn-outline">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Doctor_Appoinment-" class="btn btn-outline">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
@@ -1109,10 +1162,10 @@
               <span class="tech-tag">NumPy</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Vehicle-tracking-and-Counting-system" class="btn btn-outline">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Vehicle-tracking-and-Counting-system" class="btn btn-outline">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
@@ -1127,18 +1180,47 @@
           <div class="project-content">
             <h3 class="project-title">Event Management System</h3>
             <p class="project-description">
-              Responsive web app to manage events with add, edit, and delete functionalities. Enabled seamless scheduling across devices.
+              Responsive web app to manage events like birthday, marriage,and reception party with add, edit, and delete functionalities. Enabled seamless scheduling across devices and also give notifications about parties.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5 </span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ankit1068/Event_Management" class="btn btn-outline">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/ankit1068/Event_Management" class="btn btn-outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="crypto-trading.jpg" alt="Crypto Trading Platform">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Crypto Trading Platform</h3>
+            <p class="project-description">
+              Binance-like trading simulator with interactive candlestick charts, order book, and portfolio tracking. Practice trading BTC/ETH with $500 virtual USDT using pure frontend tech.
             </p>
             <div class="project-tech">
               <span class="tech-tag">HTML5</span>
               <span class="tech-tag">CSS3</span>
               <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Chart.js</span>
+              <span class="tech-tag">Responsive</span>
             </div>
             <div class="project-links">
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Crypto_Trading_Platform" class="btn btn-outline">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
-              <a href="#" class="btn btn-outline">
+              <a href="https://github.com/ankit1068/Crypto_Trading_Platform" class="btn btn-outline">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
@@ -1354,7 +1436,7 @@
             </div>
             <div class="contact-details">
               <h3>Email</h3>
-              <p>ankitraji1068@gmail.com</p>
+              <p>ankitrajj1068@gmail.com</p>
             </div>
           </div>
           <div class="contact-item">
@@ -1384,8 +1466,7 @@
               <p><a href="https://github.com/ankit1068/" target="_blank" style="color: var(--gray); text-decoration: none;">github.com/ankit1068</a></p>
             </div>
           </div>
-        </div>
-        <div class="contact-item">
+          <div class="contact-item">
             <div class="contact-icon">
               <i class="fab fa-instagram"></i>
             </div>
@@ -1394,26 +1475,28 @@
               <p><a href="https://www.instagram.com/ankit.iox?igsh=OW9iZHhobXp5Z2Vx" target="_blank" style="color: var(--gray); text-decoration: none;">instagram.com/ankit.iox</a></p>
             </div>
           </div>
-        <form class="contact-form">
+        </div>
+        <form id="contact-form" class="contact-form">
           <div class="form-group">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" class="form-control" required>
+            <input type="text" id="name" name="Name" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="email" class="form-label">Your Email</label>
-            <input type="email" id="email" class="form-control" required>
+            <input type="email" id="email" name="Email" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" class="form-control" required>
+            <input type="text" id="subject" name="Subject" class="form-control" required>
           </div>
           <div class="form-group">
             <label for="message" class="form-label">Message</label>
-            <textarea id="message" class="form-control" required></textarea>
+            <textarea id="message" name="Message" class="form-control" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">
             <i class="fas fa-paper-plane"></i> Send Message
           </button>
+          <div id="form-message"></div>
         </form>
       </div>
     </div>
@@ -1426,7 +1509,7 @@
         <div class="footer-about">
           <div class="footer-logo">Ankit<span>.</span></div>
           <p>
-            A passionate Full Stack Developer focused on building exceptional digital experiences with modern technologies.
+            A Passionate Software Developer focused on building exceptional digital experiences with modern technologies.
           </p>
           <div class="social-links">
             <a href="https://www.linkedin.com/in/ankit1068" target="_blank" class="social-link">
@@ -1463,9 +1546,9 @@
         <div class="footer-links">
           <h3>Contact Info</h3>
           <ul>
-            <li>ankitraji1068@gmail.com</li>
+            <li>ankitrajj1068@gmail.com</li>
             <li>Jaipur, Rajasthan</li>
-            <li>+91 XXXXX XXXXX</li>
+            <li>+91 6201563011</li>
           </ul>
         </div>
       </div>
@@ -1545,22 +1628,46 @@
       // Set current year in footer
       document.getElementById('year').textContent = new Date().getFullYear();
 
-      // Form submission
-      const contactForm = document.querySelector('.contact-form');
-      if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          alert('Thank you for your message! I will get back to you soon.');
-          contactForm.reset();
-        });
-      }
+      // Google Sheets Form Handling
+      // In your portfolio's contact form script section
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxuiiC490v8SWpe53V525dPhWhIi7Z8GgcKWXRVPwEoGM8h7abjzzLREPyrQguuFLOT6w/exec';
+      const form = document.getElementById('contact-form');
+      const formMessage = document.getElementById('form-message');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        formMessage.textContent = 'Sending message...';
+        formMessage.className = '';
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            formMessage.textContent = 'Message sent successfully!';
+            formMessage.className = 'success';
+            form.reset();
+            setTimeout(() => {
+              formMessage.textContent = '';
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            }, 3000);
+          })
+          .catch(error => {
+            formMessage.textContent = 'Error: Please try again later.';
+            formMessage.className = 'error';
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            console.error('Error!', error.message);
+          });
+      });
 
       // CV download button
       const downloadBtns = document.querySelectorAll('.btn-primary[href="#"]');
       downloadBtns.forEach(btn => {
         btn.addEventListener('click', function(e) {
           e.preventDefault();
-          // Replace with your actual CV download link
           const link = document.createElement('a');
           link.href = 'my_Resume (3).pdf';
           link.download = 'Ankit_Kumar_Resume.pdf';
