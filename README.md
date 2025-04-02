@@ -1,8 +1,17 @@
 # Ankit Kumar - Full Stack Developer Portfolio
+![Screenshot 2025-04-02 222305](https://github.com/user-attachments/assets/713930a0-ea0c-4920-aea3-9beb69009ae5)
+![Screenshot 2025-04-02 222323](https://github.com/user-attachments/assets/cdbd224b-57e7-4596-a0f7-ec10d33cfab2)
+![Screenshot 2025-04-02 222338](https://github.com/user-attachments/assets/d81576ca-4d3f-408e-8ca2-ed1d05e0bb84)
+![Screenshot 2025-04-02 222351](https://github.com/user-attachments/assets/0cdb81d6-907d-40f3-9c26-5c89ceaf6964)
+![Screenshot 2025-04-02 222408](https://github.com/user-attachments/assets/6532eb18-4e98-472b-8e8f-53989544d341)
+![Screenshot 2025-04-02 222421](https://github.com/user-attachments/assets/30053226-7b2d-4130-9057-de0761e32e31)
+![Screenshot 2025-04-02 222435](https://github.com/user-attachments/assets/73378265-1ebd-4049-85dd-11bbb8c37504)
+![Screenshot 2025-04-02 222450](https://github.com/user-attachments/assets/e82ddf15-f759-43fa-89d0-2ecff20ab638)
+![Screenshot 2025-04-02 222505](https://github.com/user-attachments/assets/c62ea2b3-e8d3-48ea-ade2-a06ba2bc0d39)
+![Screenshot 2025-04-02 222516](https://github.com/user-attachments/assets/085352c3-9bda-4ef9-ae89-c89a413a3e3f)
+![Screenshot 2025-04-02 222532](https://github.com/user-attachments/assets/a6e8e71d-d5b1-4aef-9b8a-b044062e19b2)
+![Screenshot 2025-04-02 222546](https://github.com/user-attachments/assets/87d38322-b628-4819-8e90-ea13e0af618d)
 
-![Portfolio Screenshot](![Screenshot 2025-03-31 232459](https://github.com/user-attachments/assets/ab8ca1ef-bd0d-4c59-b263-23bbf2c64e6b)
-![Screenshot 2025-03-31 232524](https://github.com/user-attachments/assets/3dfd6bf6-1972-42d4-ba5b-3a18c03e4dc6)
-![Screenshot 2025-03-31 232537](https://github.com/user-attachments/assets/e87a00c1-dd33-4f64-8555-2ae7ec0eff48)
 
 ) <!-- Add a screenshot if available -->
 
