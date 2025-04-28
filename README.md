@@ -16,7 +16,7 @@
 ) <!-- Add a screenshot if available -->
 
 ## 🚀 Live Demo
-[View Portfolio](https://github.com/ankit1068/Ankit-s-Portfolio) <!-- Replace with your GitHub Pages or custom domain link -->
+[View Portfolio](https://github.com/ankit-kumarz/Ankit-s-Portfolio) <!-- Replace with your GitHub Pages or custom domain link -->
 
 ## 🌟 Features
 - **Modern UI** with gradient accents and smooth animations
@@ -75,7 +75,7 @@ Email: ankitraji1068@gmail.com
 
 LinkedIn: linkedin.com/in/ankit1068
 
-GitHub: github.com/ankit1068
+GitHub: github.com/ankit-kumarz
 
 Instagram: instagram.com/ankit.iox
 
