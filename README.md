@@ -16,7 +16,7 @@
 ) <!-- Add a screenshot if available -->
 
 ## 🚀 Live Demo
-[View Portfolio](https://github.com/ankit-kumarz/Ankit-s-Portfolio) <!-- Replace with your GitHub Pages or custom domain link -->
+[View Portfolio](https://ankit-kumarz.github.io/Ankit-s-Portfolio/) <!-- Replace with your GitHub Pages or custom domain link -->
 
 ## 🌟 Features
 - **Modern UI** with gradient accents and smooth animations
