@@ -407,110 +407,213 @@
     }
 
     /* Projects Section */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
+  /* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
-    .project-card {
-      background-color: var(--card);
-      border-radius: 0.5rem;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
+.project-card {
+  background-color: var(--card);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-    .project-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-      border-color: var(--primary);
-    }
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
 
-    .project-image {
-      height: 200px;
-      overflow: hidden;
-    }
+.project-image {
+  height: 200px;
+  overflow: hidden;
+}
 
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
-    .project-card:hover .project-image img {
-      transform: scale(1.1);
-    }
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
 
-    .project-content {
-      padding: 1.5rem;
-    }
+.project-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-    .project-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: white;
-    }
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
 
-    .project-description {
-      color: var(--gray);
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
+.project-description {
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
 
-    .project-tech {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
 
-    .tech-tag {
-      background-color: rgba(124, 58, 237, 0.1);
-      color: var(--primary);
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
+.tech-tag {
+  background-color: rgba(124, 58, 237, 0.1);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
 
-    .project-links {
-      display: flex;
-      gap: 1rem;
-    }
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
 
-    .project-links a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 
-    .project-links a:first-child {
-      background-color: var(--primary);
-      color: white;
-      border: 1px solid var(--primary);
-    }
+.project-links a:first-child {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
 
-    .project-links a:first-child:hover {
-      background-color: rgba(124, 58, 237, 0.9);
-    }
+.project-links a:first-child:hover {
+  background-color: rgba(124, 58, 237, 0.9);
+}
 
-    .project-links a:last-child {
-      background-color: transparent;
-      color: var(--primary);
-      border: 1px solid var(--primary);
-    }
+.project-links a:last-child {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
 
-    .project-links a:last-child:hover {
-      background-color: rgba(124, 58, 237, 0.1);
-    }
+.project-links a:last-child:hover {
+  background-color: rgba(124, 58, 237, 0.1);
+}
+
+/* Media Queries for Projects Section */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For very large screens */
+@media (min-width: 1400px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Optional: Pagination Styles */
+.projects-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.pagination-btn.active {
+  background-color: var(--primary-dark);
+  font-weight: bold;
+}
+
+/* Media queries for responsive layout */
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For very large screens, consider 4 columns */
+@media (min-width: 1400px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* Keep at 3 for better readability */
+  }
+}
+
+/* Add smooth scrolling for pagination if needed */
+.projects-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.pagination-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.pagination-btn.active {
+  background-color: var(--primary-dark);
+  font-weight: bold;
+}
 
     /* Skills Section */
     .skills-container {
@@ -1080,268 +1183,321 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">Some of my recent work</p>
+<section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Some of my recent work</p>
+    </div>
+    <div class="projects-grid">
+      <!-- Project 1 - New -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="heart-disease.jpg" alt="Heart Disease Prediction System">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Heart Disease Prediction System</h3>
+          <p class="project-description">
+            A secure, role-based web application for predicting heart disease with 85% accuracy using Gradient Boosting ML model.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Linux</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Heart_Disease_Prediction_System" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="heart-disease.jpg" alt="Heart Disease Prediction System">
+
+      <!-- Project 2 - New -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="source-code-analysis.jpg" alt="End-to-End Source Code Analysis Tool">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">End-to-End Source Code Analysis Tool</h3>
+          <p class="project-description">
+            Generative AI-powered application to analyze GitHub repositories and enable natural language interaction with source code.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">OpenAI GPT</span>
+            <span class="tech-tag">ChromaDB</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">Heart Disease Prediction System</h3>
-            <p class="project-description">
-              A secure, role-based web application for predicting heart disease with 85% accuracy using Gradient Boosting ML model.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Django</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Machine Learning</span>
-              <span class="tech-tag">REST API</span>
-              <span class="tech-tag">Linux</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/Heart_Disease_Prediction_System" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/Heart_Disease_Prediction_System" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/End-to-End-Source-Code-Analysis-Tool" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="source-code-analysis.jpg" alt="End-to-End Source Code Analysis Tool">
+      <!-- Project 3 - New -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="job-recommender.jpg" alt="AI Powered Job Recommender System">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AI Powered Job Recommender System</h3>
+          <p class="project-description">
+            Modern AI-powered web application that analyzes resumes and recommends personalized jobs from LinkedIn and Naukri.com.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">OpenAI GPT</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">REST API</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">End-to-End Source Code Analysis Tool</h3>
-            <p class="project-description">
-              Generative AI-powered application to analyze GitHub repositories and enable natural language interaction with source code.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">OpenAI GPT</span>
-              <span class="tech-tag">ChromaDB</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/End-to-End-Source-Code-Analysis-Tool" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/End-to-End-Source-Code-Analysis-Tool" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/AI_Powered_Job_Recommender_System" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="job-recommender.jpg" alt="AI Powered Job Recommender System">
+      <!-- Project 4 - New -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="hr-analytics.jpg" alt="End To End HR Analytics Project">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">End To End HR Analytics Project</h3>
+          <p class="project-description">
+            Smart job recommender tool for HRs and job seekers using advanced NLP and machine learning techniques.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Selenium</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">AI Powered Job Recommender System</h3>
-            <p class="project-description">
-              Modern AI-powered web application that analyzes resumes and recommends personalized jobs from LinkedIn and Naukri.com.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">OpenAI GPT</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">REST API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/AI_Powered_Job_Recommender_System" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/AI_Powered_Job_Recommender_System" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/End-To-End_HR-Analytics-Project" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="hr-analytics.jpg" alt="End To End HR Analytics Project">
+      <!-- Project 5 - New -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="sentiment-analysis.jpg" alt="AI Sentiment Analysis Web App">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AI Sentiment Analysis Web App</h3>
+          <p class="project-description">
+            AI-driven Sentiment Analysis Web Page with modern UI and real-time sentiment visualization using Chart.js.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">TextBlob</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Chart.js</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">End To End HR Analytics Project</h3>
-            <p class="project-description">
-              Smart job recommender tool for HRs and job seekers using advanced NLP and machine learning techniques.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">Machine Learning</span>
-              <span class="tech-tag">Selenium</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/End-To-End_HR-Analytics-Project" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/End-To-End_HR-Analytics-Project" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/AI-Driven_Sentiment_Analysis" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 5 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="sentiment-analysis.jpg" alt="AI Sentiment Analysis Web App">
+      <!-- Project 6 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="ecommerce-comparison.jpg" alt="eCommerce Price Comparison Tracker">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">eCommerce Price Comparison Tracker</h3>
+          <p class="project-description">
+            Hackathon-winning platform to compare prices across Flipkart, Amazon, Mesaho, and Croma with AI-driven trends and price alerts.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">REST API</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">AI Sentiment Analysis Web App</h3>
-            <p class="project-description">
-              AI-driven Sentiment Analysis Web Page with modern UI and real-time sentiment visualization using Chart.js.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">TextBlob</span>
-              <span class="tech-tag">Tailwind CSS</span>
-              <span class="tech-tag">Chart.js</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/AI-Driven_Sentiment_Analysis" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/AI-Driven_Sentiment_Analysis" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="https://github.com/ankit-kumarz/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 6 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="ecommerce-comparison.jpg" alt="eCommerce Price Comparison Tracker">
+      <!-- Project 7 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="germ-detection.jpg" alt="AI-Powered Germ Detection System">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AI-Powered Germ Detection System</h3>
+          <p class="project-description">
+            Real-time germ detection with cleanliness scoring using OpenCV and NumPy. Integrated with Flask backend and responsive front-end.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">eCommerce Price Comparison Tracker</h3>
-            <p class="project-description">
-              Hackathon-winning platform to compare prices across Flipkart, Amazon, Mesaho, and Croma with AI-driven trends and price alerts.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">REST API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/eCommerce_Price_Comparison_Traker" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="https://github.com/ankit-kumarz/Germ-Detection-System" class="btn btn-outline" target="_blank">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Germ-Detection-System" class="btn btn-outline" target="_blank">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 7 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="germ-detection.jpg" alt="AI-Powered Germ Detection System">
+      <!-- Project 8 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="doctor-appointment.jpg" alt="Doctor Appointment Service">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Doctor Appointment Service</h3>
+          <p class="project-description">
+            Web app for booking doctor appointments with user authentication and admin controls. Included doctor search and appointment history features.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Servlets</span>
+            <span class="tech-tag">JSP</span>
+            <span class="tech-tag">Apache Tomcat</span>
+            <span class="tech-tag">HTML</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">AI-Powered Germ Detection System</h3>
-            <p class="project-description">
-              Real-time germ detection with cleanliness scoring using OpenCV and NumPy. Integrated with Flask backend and responsive front-end.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag">NumPy</span>
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/Germ-Detection-System" class="btn btn-outline" target="_blank">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/Germ-Detection-System" class="btn btn-outline" target="_blank">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="https://github.com/ankit-kumarz/Doctor_Appoinment-" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Doctor_Appoinment-" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project 8 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="crypto-trading.jpg" alt="Crypto Trading Platform">
+      <!-- Project 9 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="vehicle-tracking.jpg" alt="Vehicle Tracking and Counting System">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Vehicle Tracking and Counting System</h3>
+          <p class="project-description">
+            System to detect, track, and count vehicles in video streams using OpenCV and motion detection. Utilized Background Subtraction (MOG2) for real-time analysis.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">NumPy</span>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">Crypto Trading Platform</h3>
-            <p class="project-description">
-              Binance-like trading simulator with interactive candlestick charts, order book, and portfolio tracking.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">Chart.js</span>
-              <span class="tech-tag">Responsive</span>
-            </div>
-            <div class="project-links">
-              <a href="https://ankit-kumarz.github.io/Crypto_Trading_Platform/" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/Crypto_Trading_Platform" class="btn btn-outline">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
+          <div class="project-links">
+            <a href="https://github.com/ankit-kumarz/Vehicle-tracking-and-Counting-system" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Vehicle-tracking-and-Counting-system" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 10 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="event-management.jpg" alt="Event Management System">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Event Management System</h3>
+          <p class="project-description">
+            Responsive web app to manage events like birthday, marriage,and reception party with add, edit, and delete functionalities.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5 </span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ankit-kumarz/Event_Management" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Event_Management" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 11 - Existing -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="crypto-trading.jpg" alt="Crypto Trading Platform">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Crypto Trading Platform</h3>
+          <p class="project-description">
+            Binance-like trading simulator with interactive candlestick charts, order book, and portfolio tracking.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Chart.js</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+          <div class="project-links">
+            <a href="https://ankit-kumarz.github.io/Crypto_Trading_Platform/" class="btn btn-outline">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/ankit-kumarz/Crypto_Trading_Platform" class="btn btn-outline">
+              <i class="fab fa-github"></i> Code
+            </a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Project 9 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="doctor-appointment.jpg" alt="Doctor Appointment Service">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Doctor Appointment Service</h3>
-            <p class="project-description">
-              Web app for booking doctor appointments with user authentication and admin controls. Included doctor search and appointment history features.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Servlets</span>
-              <span class="tech-tag">JSP</span>
-              <span class="tech-tag">Apache Tomcat</span>
-              <span class="tech-tag">HTML</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/ankit-kumarz/Doctor_Appoinment-" class="btn btn-outline">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-              </a>
-              <a href="https://github.com/ankit-kumarz/Doctor_Appoinment-" class="btn btn-outline">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-        </div>
-  </section>
+  </div>
+</section>
 
   <!-- Skills Section -->
   <section id="skills" class="skills">
@@ -1878,5 +2034,6 @@
   </script>
 </body>
 </html>
+
 
 
