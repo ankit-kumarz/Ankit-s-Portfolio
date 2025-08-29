@@ -666,24 +666,11 @@
       font-weight: 500;
     }
 
-    /* Certifications Section */
-.certification-category {
-  font-size: 1.5rem;
-  margin: 3rem 0 1.5rem 0;
-  color: var(--primary);
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.5rem;
-}
-
-.certification-category:first-child {
-  margin-top: 0;
-}
-
+/* Certifications Section */
 .certifications-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin-bottom: 2rem;
 }
 
 .certification-card {
@@ -692,33 +679,22 @@
   border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
 }
 
 .certification-card:hover {
   transform: translateY(-5px);
   border-color: var(--primary);
-  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.1);
 }
 
 .certification-title {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: white;
 }
 
 .certification-issuer {
   color: var(--primary);
   font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-}
-
-.certification-date {
-  color: var(--gray);
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
 }
 
 /* Media Queries for Certifications */
@@ -731,12 +707,6 @@
 @media (min-width: 992px) {
   .certifications-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1200px) {
-  .certifications-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -2237,6 +2207,7 @@
   </script>
 </body>
 </html>
+
 
 
 
