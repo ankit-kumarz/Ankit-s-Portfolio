@@ -664,35 +664,78 @@
     }
 
     /* Certifications Section */
-    .certifications-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
+.certification-category {
+  font-size: 1.5rem;
+  margin: 3rem 0 1.5rem 0;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
 
-    .certification-card {
-      background-color: var(--card);
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: transform 0.3s ease;
-    }
+.certification-category:first-child {
+  margin-top: 0;
+}
 
-    .certification-card:hover {
-      transform: translateY(-5px);
-      border-color: var(--primary);
-    }
+.certifications-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
 
-    .certification-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
+.certification-card {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
 
-    .certification-issuer {
-      color: var(--primary);
-      font-size: 0.9rem;
-    }
+.certification-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.1);
+}
+
+.certification-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.certification-issuer {
+  color: var(--primary);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.certification-date {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries for Certifications */
+@media (min-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .certifications-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .certifications-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
     /* Contact Section */
     .contact-content {
@@ -1721,52 +1764,198 @@
     </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Certifications</h2>
-        <p class="section-subtitle">My professional certifications</p>
+<!-- Certifications Section -->
+<section id="certifications" class="certifications">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-subtitle">My professional certifications</p>
+    </div>
+
+    <!-- Google Certifications -->
+    <h3 class="certification-category">Google Certifications</h3>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <h3 class="certification-title">Google Cloud Computing Fundamentals</h3>
+        <p class="certification-issuer">Google</p>
+        <p class="certification-date">Oct 2024</p>
+        <a href="YOUR_GCCF_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
       </div>
-      <div class="certifications-grid">
-        <div class="certification-card">
-          <h3 class="certification-title">Google Cloud Computing Fundamentals</h3>
-          <p class="certification-issuer">Google</p>
-          <a href="#" class="btn btn-outline" style="margin-top: 1rem;">
-            <i class="fas fa-external-link-alt"></i> View Certificate
-          </a>
-        </div>
-        <div class="certification-card">
-          <h3 class="certification-title">Database for Developers Foundations</h3>
-          <p class="certification-issuer">Oracle</p>
-          <a href="#" class="btn btn-outline" style="margin-top: 1rem;">
-            <i class="fas fa-external-link-alt"></i> View Certificate
-          </a>
-        </div>
-        <div class="certification-card">
-          <h3 class="certification-title">Agile Scrum in Practice</h3>
-          <p class="certification-issuer">Infosys Springboard</p>
-          <a href="#" class="btn btn-outline" style="margin-top: 1rem;">
-            <i class="fas fa-external-link-alt"></i> View Certificate
-          </a>
-        </div>
-        <div class="certification-card">
-          <h3 class="certification-title">Python Essentials 1</h3>
-          <p class="certification-issuer">Cisco</p>
-          <a href="#" class="btn btn-outline" style="margin-top: 1rem;">
-            <i class="fas fa-external-link-alt"></i> View Certificate
-          </a>
-        </div>
-        <div class="certification-card">
-          <h3 class="certification-title">Project Management</h3>
-          <p class="certification-issuer">Google</p>
-          <a href="#" class="btn btn-outline" style="margin-top: 1rem;">
-            <i class="fas fa-external-link-alt"></i> View Certificate
-          </a>
-        </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">GDG Solution Challenge</h3>
+        <p class="certification-issuer">Google</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_GDG_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
       </div>
     </div>
-  </section>
+
+    <!-- Industry Certifications -->
+    <h3 class="certification-category">Industry Certifications</h3>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <h3 class="certification-title">CS Soft Skills</h3>
+        <p class="certification-issuer">TCS</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_TCS_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Python Essentials 1</h3>
+        <p class="certification-issuer">Cisco</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_CISCO_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">NIT Manipur Hackathon</h3>
+        <p class="certification-issuer">NIT Manipur</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_NIT_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+    </div>
+
+    <!-- Infosys Springboard - AI/ML Certifications -->
+    <h3 class="certification-category">Infosys Springboard - AI/ML Certifications</h3>
+    <div class="certifications-grid">
+      <div class="certification-card">
+        <h3 class="certification-title">Agile Scrum in Practice</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_AGILE_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Artificial Intelligence Primer</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_AI_PRIMER_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Artificial Intelligence</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_AI_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Computer Vision 101</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_CV_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Deep Learning for Developers</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_DL_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Generative Models for Developers</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_GENERATIVE_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Introduction to Artificial Intelligence</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_INTRO_AI_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Introduction to Data Science</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_DS_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Introduction to Deep Learning</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_INTRO_DL_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Introduction to Natural Language Processing</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_NLP_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Introduction to OpenAI GPT Models</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_GPT_INTRO_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">OpenAI GPT-3 for Developers</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_GPT3_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Principles of Generative AI</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_GEN_AI_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+      
+      <div class="certification-card">
+        <h3 class="certification-title">Prompt Engineering</h3>
+        <p class="certification-issuer">Infosys Springboard</p>
+        <p class="certification-date">2024</p>
+        <a href="YOUR_PROMPT_ENG_CERT_LINK_HERE" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">
+          <i class="fas fa-external-link-alt"></i> View Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -2035,6 +2224,7 @@
   </script>
 </body>
 </html>
+
 
 
 
