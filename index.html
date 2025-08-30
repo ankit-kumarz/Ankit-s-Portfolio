@@ -125,18 +125,18 @@
       justify-content: space-between;
     }
 
-    .logo {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+   .logo.gradient {
+  background: linear-gradient(90deg, var(--primary), #c4b5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.logo span {
-  color: var(--primary);
+.logo.gradient span {
+  background: linear-gradient(90deg, #c4b5fd, var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
     .desktop-nav {
@@ -1102,7 +1102,7 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-content">
-        <a href="#" class="logo">AK<span>.</span></a>
+       <a href="#" class="logo">A<span>K</span></a>
 
         <!-- Desktop Navigation -->
         <div class="desktop-nav">
@@ -2285,6 +2285,7 @@
   </script>
 </body>
 </html>
+
 
 
 
