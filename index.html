@@ -125,12 +125,19 @@
       justify-content: space-between;
     }
 
-  /* For Option 2 */
-.logo.html-style {
-  font-family: 'Courier New', monospace;
-  font-weight: 600;
+ .logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
+.logo span {
+  color: var(--primary);
+}
     .desktop-nav {
       display: none;
     }
@@ -1094,7 +1101,7 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-content">
-       <a href="#" class="logo">&lt;Ankit/&gt;</a>
+      <a href="#" class="logo">AK<span>.</span></a>
 
         <!-- Desktop Navigation -->
         <div class="desktop-nav">
@@ -2277,6 +2284,7 @@
   </script>
 </body>
 </html>
+
 
 
 
