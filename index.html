@@ -2248,7 +2248,7 @@
         formMessage.className = '';
 
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
+          .then(response => { 
             formMessage.textContent = 'Message sent successfully!';
             formMessage.className = 'success';
             form.reset();
@@ -2284,6 +2284,7 @@
   </script>
 </body>
 </html>
+
 
 
 
